@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("station.jpg");
     background-size: cover;
@@ -7,24 +15,26 @@ body {
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: clamp(1.5rem, 1.393rem + 0.536vw, 1.875rem);
+    margin-block: 1.5rem;
 }
 
 h2 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: clamp(3.125rem, 2.946rem + 0.893vw, 3.75rem);
+    margin: 0 0 2.8rem;
+}
+
+p,
+button {
+    font-size: clamp(1rem, 0.929rem + 0.357vw, 1.25rem);
 }
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-block: 0.7rem;
     color: white;
-    font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: 250ms ease-in-out;
